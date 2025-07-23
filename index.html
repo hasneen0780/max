@@ -1434,7 +1434,7 @@
 
     // تحميل البيانات الأولية
     function loadData() {
-      fetch('data.json')
+      fetch('https://raw.githubusercontent.com/hasneen0780/max/main/data.json')
         .then(response => {
           if (!response.ok) throw new Error('فشل تحميل البيانات');
           return response.json();
